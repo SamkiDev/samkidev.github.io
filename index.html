@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-ZA" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samalani Maluwa (SamkiDev) · Developer</title>
+  <meta name="description" content="Samalani Maluwa (SamkiDev): Applied Mathematics and Computer Science student at UNISA, South Africa, building practical web apps for student funding, small shops and local delivery.">
+  <meta name="author" content="Samalani Maluwa">
+  <link rel="canonical" href="https://samkidev.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SamkiDev">
+  <meta property="og:title" content="Samalani Maluwa (SamkiDev) · Developer">
+  <meta property="og:description" content="Applied Mathematics and Computer Science student at UNISA building practical web apps for South African problems.">
+  <meta property="og:url" content="https://samkidev.github.io/">
+  <meta property="og:image" content="https://samkidev.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Samalani Maluwa, SamkiDev: developer portfolio">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#1C1D20" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F2F4F1" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Apply the saved theme before the page paints (dark is the default). -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Samalani Maluwa",
+    "alternateName": "SamkiDev",
+    "url": "https://samkidev.github.io/",
+    "sameAs": ["https://github.com/SamkiDev"],
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of South Africa (UNISA)" },
+    "address": { "@type": "PostalAddress", "addressCountry": "ZA" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="SamkiDev, back to top">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-text">Samki<span>Dev</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6Z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path class="menu-line menu-line-1" d="M4 8h16"/><path class="menu-line menu-line-2" d="M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual" id="hero-visual" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="live-status" id="live-status" hidden>
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="live-status-text"></span>
+          </p>
+          <p class="eyebrow">Applied Mathematics &amp; Computer Science · UNISA</p>
+          <h1 class="hero-title" id="hero-title">
+            Samalani <span class="hero-title-accent">Maluwa</span>
+            <span class="hero-sub">I build practical software for South African problems.</span>
+          </h1>
+          <p class="hero-lead">
+            Student funding, student-finance agents, spaza-shop stock and local delivery: web apps that say
+            clearly what is real, what is a demo, and how the numbers are worked out.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See my projects <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" id="hero-showcase" aria-hidden="true">
+          <figure class="shot shot-back">
+            <div class="shot-bar"><i></i><i></i><i></i></div>
+            <img src="assets/projects/askthuso-sm.webp" alt="" width="640" height="400" decoding="async">
+          </figure>
+          <figure class="shot shot-mid">
+            <div class="shot-bar"><i></i><i></i><i></i></div>
+            <img src="assets/projects/green-valley-online-sm.webp" alt="" width="640" height="400" decoding="async">
+          </figure>
+          <figure class="shot shot-front">
+            <div class="shot-bar"><i></i><i></i><i></i></div>
+            <img src="assets/projects/thutovest-sm.webp" alt="" width="640" height="400" decoding="async" fetchpriority="high">
+          </figure>
+          <span class="shot-badge">
+            <span class="shot-badge-medal">2nd</span>
+            <span>AskThuso<small>UNISA ICT Agentic AI Hackathon</small></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats" id="stats" aria-label="At a glance"></ul>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="about-photo" id="about-photo" hidden>
+          <img id="about-photo-img" alt="Samalani Maluwa" width="480" height="600" decoding="async">
+        </figure>
+
+        <div class="about-text">
+          <p class="section-kicker"><span>01</span>About</p>
+          <h2 class="section-title" id="about-title">An emerging software engineer, always learning</h2>
+          <p>
+            I'm Samalani Maluwa (SamkiDev), a student pursuing a BSc in Applied Mathematics and Computer Science
+            at the University of South Africa (UNISA). I'm early in my journey: still learning, sharpening my
+            technical skills and gaining practical software development experience one project at a time.
+          </p>
+          <p>
+            I'm passionate about software engineering, full-stack development, artificial intelligence and
+            cybersecurity. I put that into practice through personal projects, academic work and collaborative
+            technology initiatives such as hackathon teams, and I completed the FNB App Academy Full Stack
+            Development programme in 2025.
+          </p>
+          <p>
+            AI-powered coding assistants are part of how I work. They help me explore solutions, understand
+            unfamiliar technologies, debug issues, review code and work more efficiently. I see AI as a
+            development tool and a learning companion, not a replacement for the fundamentals: I make the effort
+            to understand and test what I build, and I take responsibility for the code I put my name on.
+          </p>
+          <p>
+            I'm curious, adaptable and comfortable picking up new tools, and I'm excited about where software
+            development is heading. My aim is to keep improving as a developer and to learn how to build software
+            that is useful, reliable and meaningful.
+          </p>
+        </div>
+
+        <div class="about-facts">
+          <dl class="facts">
+            <div><dt>Studying</dt><dd>BSc Applied Mathematics &amp; Computer Science, UNISA (2nd year, 2026)</dd></div>
+            <div><dt>Based in</dt><dd>South Africa</dd></div>
+            <div><dt>Certificate</dt><dd>FNB App Academy, Full Stack Development (2025)</dd></div>
+          </dl>
+          <p class="facts-label">Tools I've built with</p>
+          <ul class="chips" aria-label="Tools I've built with">
+            <li>TypeScript</li><li>React</li><li>Node.js &amp; Express</li><li>PostgreSQL &amp; Prisma</li>
+            <li>Supabase</li><li>Next.js</li><li>Tailwind CSS</li><li>Playwright</li><li>HTML, CSS &amp; JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker"><span>02</span>Projects</p>
+            <h2 class="section-title" id="projects-title">What I've built</h2>
+            <p class="section-lead">Everything here is on my GitHub. Each project is labelled honestly: completed, prototype, hackathon or concept. Tap a card for the details.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects by status" id="project-filters"></div>
+        </div>
+
+        <ul class="project-grid" id="project-grid" aria-live="polite"></ul>
+
+        <noscript>
+          <p class="noscript-note">The project list needs JavaScript. You can also browse my work on
+            <a href="https://github.com/SamkiDev">GitHub</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <p class="section-kicker"><span>03</span>Achievements</p>
+        <h2 class="section-title" id="achievements-title">Recognition &amp; learning</h2>
+
+        <ul class="achievements">
+          <li class="achievement achievement-award">
+            <span class="medal" aria-hidden="true">2<sup>nd</sup></span>
+            <div>
+              <p class="achievement-kicker">Second place</p>
+              <h3>AskThuso</h3>
+              <p class="achievement-meta">UNISA ICT Agentic AI Hackathon · 2026 · team project</p>
+              <p class="achievement-text">An agentic AI financial caseworker for UNISA student finance.
+                <a href="#project-askthuso" data-open-project="askthuso">See the project</a></p>
+            </div>
+          </li>
+          <li class="achievement">
+            <span class="achievement-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 2.5 8 12 13l9.5-5L12 3Z"/><path d="M6.5 10.2v4.6c0 1.6 2.5 3.2 5.5 3.2s5.5-1.6 5.5-3.2v-4.6"/></svg>
+            </span>
+            <div>
+              <p class="achievement-kicker">Certificate</p>
+              <h3>Full Stack Development</h3>
+              <p class="achievement-meta">FNB App Academy · 2025</p>
+            </div>
+          </li>
+          <li class="achievement">
+            <span class="achievement-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            </span>
+            <div>
+              <p class="achievement-kicker">Hackathon</p>
+              <h3>FNB App of the Year Hackathon 2026</h3>
+              <p class="achievement-meta">Built ThutoVest with Team Thuto ·
+                <a href="#project-thutovest" data-open-project="thutovest">See the project</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker"><span>04</span>Contact</p>
+          <h2 class="section-title" id="contact-title">Let's talk</h2>
+          <p class="section-lead">Questions about a project, a bursary or internship opportunity, or an idea to build together? Send a message.</p>
+          <ul class="contact-links" id="contact-links"></ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="100">
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required maxlength="200">
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required maxlength="4000"></textarea>
+          </div>
+          <!-- Spam trap: people never see or fill this. -->
+          <div class="hp" aria-hidden="true">
+            <label for="cf-company">Company</label>
+            <input id="cf-company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn-primary" type="submit" id="cf-submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Samalani Maluwa · Built with plain HTML, CSS and JavaScript</p>
+      <a href="#top" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Project details -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button class="icon-btn modal-close" type="button" id="modal-close" aria-label="Close project details">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/visuals.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
